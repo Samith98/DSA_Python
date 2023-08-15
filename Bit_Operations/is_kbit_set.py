@@ -9,6 +9,10 @@ def is_kbit_set(n: int, k: int) -> bool:
     :return: True, if kth bit is SET. False if kth bit is NOT SET
     """
     temp = 1 << (k - 1)
+    """
+    The above code can be applied using right shift operator as 
+    temp = (k-1) >> 1
+    """
     if n & temp:
         return True
     else:
